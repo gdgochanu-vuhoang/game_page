@@ -3,9 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
   --beige-light: #fdf6e3;
   --beige-base: #eee8d5;
   --beige-dark: #ddd6c1;
+
+  --mauve-light: #fde3f7;
+  --mauve-base: #eed5e7;
+  --mauve-dark: #ddc1d6;
+
+  --beige-light-alt: #f5f0dc;
+  --beige-dark-alt: #d1cbb8;
 }
 
 @theme inline {
@@ -14,6 +22,12 @@
   --color-beige-light: var(--beige-light);
   --color-beige-base: var(--beige-base);
   --color-beige-dark: var(--beige-dark);
+  --color-mauve-light: var(--mauve-light);
+  --color-mauve-base: var(--mauve-base);
+  --color-mauve-dark: var(--mauve-dark);
+  --color-beige-light-alt: var(--beige-light-alt);
+  --color-beige-dark-alt: var(--beige-dark-alt);
+  
   --font-comfortaa: var(--font-comfortaa);
 }
 
@@ -25,7 +39,5 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: var(--font-comfortaa), Helvetica, sans-serif;
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Comfortaa } from "next/font/google";
 import "./globals.css";
+import Footer from "../components/common/Footer";
 
 const comfortaa = Comfortaa({
   variable: "--font-comfortaa",
@@ -23,7 +24,10 @@ export default function RootLayout({
       lang="en"
       className={`${comfortaa.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+       <Footer /> 
+      </body>
     </html>
   );
 }
